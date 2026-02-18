@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme inline {
+  /* === Dark-first Design Tokens === */
+
+  /* Abyss — deepest backgrounds */
+  --color-abyss-900: #0a0e17;
+  --color-abyss-800: #111827;
+  --color-abyss-700: #1a2332;
+
+  /* Ocean — primary blue accents */
+  --color-ocean-500: #3b82f6;
+  --color-ocean-400: #60a5fa;
+  --color-ocean-300: #93c5fd;
+
+  /* Canvas — text and borders */
+  --color-canvas-100: #f1f5f9;
+  --color-canvas-200: #e2e8f0;
+  --color-canvas-300: #cbd5e1;
+  --color-canvas-400: #94a3b8;
+  --color-canvas-500: #64748b;
+
+  /* Sand — warm neutrals */
+  --color-sand-200: #e7e5e4;
+  --color-sand-300: #d6d3d1;
+  --color-sand-400: #a8a29e;
+
+  /* Honey — warnings, highlights */
+  --color-honey-400: #facc15;
+  --color-honey-500: #eab308;
+
+  /* Ember — errors, destructive */
+  --color-ember-400: #f87171;
+  --color-ember-500: #ef4444;
+
+  /* Semantic aliases */
+  --color-surface: var(--color-abyss-800);
+  --color-surface-raised: var(--color-abyss-700);
+  --color-border: color-mix(in srgb, var(--color-canvas-400) 20%, transparent);
+  --color-text-primary: var(--color-canvas-100);
+  --color-text-secondary: var(--color-canvas-400);
+  --color-text-muted: var(--color-canvas-500);
+  --color-accent: var(--color-ocean-500);
+  --color-accent-hover: var(--color-ocean-400);
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  @theme inline {
+    --color-surface: #ffffff;
+    --color-surface-raised: #f8fafc;
+    --color-border: color-mix(in srgb, var(--color-canvas-300) 50%, transparent);
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94a3b8;
+  }
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-abyss-900);
+  color: var(--color-text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f1f5f9;
+  }
+}
