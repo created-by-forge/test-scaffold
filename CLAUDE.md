@@ -1,6 +1,6 @@
-# CLAUDE.md — test-scaffold
+# CLAUDE.md — flo
 
-Test project for validating the /new-project skill.
+Flo — Matt's personal assistant for managing workload across Forge projects.
 
 Monday.com Board ID: 18400623038
 Notion Page ID: 30b62a23-79a8-818b-9fd0-c7c977f99702
@@ -16,7 +16,7 @@ npm run lint         # Lint check
 ## Tech Stack
 
 - **Framework:** React + TypeScript
-- **Build:** Vite 7
+- **Build:** Vite
 - **Styling:** Tailwind CSS v4 (CSS-based config in `src/index.css`, no tailwind.config file)
 - **Routing:** React Router DOM v7
 - **State:** Zustand (stores in `src/stores/`)

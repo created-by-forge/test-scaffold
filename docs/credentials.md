@@ -1,4 +1,4 @@
-# Credentials — Test Scaffold
+# Credentials — Flo
 
 This file tracks credential **names only**. Values are stored in `.env` (never committed).
 
